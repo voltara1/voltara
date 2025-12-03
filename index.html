@@ -28,7 +28,9 @@
 	
 <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Voltara</a>
+    <a class="navbar-brand" href="#">
+      <img src="image/VoltaraLogo_Black.png" alt="Voltara Logo" class="navbar-logo">
+    </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -49,17 +51,18 @@
         <li class="nav-item">
           <a class="nav-link" href="#">Forum</a>
         </li>
-        <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-          <li class="nav-item">
-          <a class="nav-link" href="#">Login</a>
-        </li>
-          <li class="nav-item">
-          <a class="nav-link" href="#">Sign-Up</a>
-        </li>
       </ul>
+     
+      <form class="d-flex me-3" role="search">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+      <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+     
+      <ul class="navbar-nav nav-pills">
+        <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Sign-Up</a></li>
+      </ul>
+   
       
     </div>
   </div>
@@ -86,6 +89,17 @@ Want to quickly replicate the project or add your own creativity to it? With a c
 Share Your Own Creations Ready to inspire others? As a creator, you can easily upload your projects, with build photos, schematics, code, and supporting files. Respond to questions, offer tips, and become a mentor to fellow makers. Your project could be the spark that ignites someone else’s passion for electronics!
 <h4>Start Your Journey Today.</h4>
 Sign up now to share your projects, ask questions, or simply explore and learn. VOLTARA is where your next big idea begins!
+
+
+  <!-- Featured Projects Section -->
+  <section class="projects-section" id="projects">
+      <div class="container">
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="projects-grid" id="projectsGrid">
+              <!-- Projects will be dynamically loaded here -->
+          </div>
+      </div>
+  </section>
 
   <footer>
     <p>&copy; Voltara, All rights Reserved</p>
