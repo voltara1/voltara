@@ -19,3 +19,30 @@ h1 {
   background-color: var(--success-color);
   color: var(--text-color-light);
 }
+
+/* start of footer section */
+footer {
+  grid-column: full-start / full-end;
+  display: flex;
+  flex-direction: row;
+  font-size: smaller;
+  border-top: 1px solid #e7e7e7;
+  /* how do we spread the content, similar to the navbar */
+  justify-content: space-between;
+  padding: 1rem 0 2rem 0;
+  color: #8d8d8d;
+}
+
+footer > p {
+  margin-left: 1.5rem;
+}
+footer > ul {
+  display: flex;
+  list-style: none;
+}
+footer > ul > li {
+  margin-right: 1rem;
+}
+footer > ul > li:last-child {
+  margin-right: 1.5rem;
+}
